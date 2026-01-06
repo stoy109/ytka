@@ -16,7 +16,7 @@
 ## 🇬🇧 English Version
 
 ### 🤷‍♂️ What is this?
-YTKA is a dual-screen karaoke app I built because existing software is either too expensive or too bloated. I just wanted to sing, not fly a spaceship.
+YTKA is a dual-screen karaoke app I built because existing software is either too expensive or too bloated. I just wanted to sing, not fly a spaceship. And I made this in 3 hours so that bugs can be found anywhere in the app :D.
 
 The concept is simple:
 1.  **Screen 1 (PC):** You control the playlist (Controller).
@@ -108,13 +108,13 @@ npm run dist
 
 * **Apakah bakal gw benerin?** Tergantung *mood*, cuaca, dan saldo rekening gw.
 * **"Bang, ini error!"** Ya maap. Di laptop gw bisa kok.
-* **"Bang, tambah fitur dong!"** Bikin sendiri lah, manja amat.
+* **"Bang, tambah fitur dong!"** Bikin sendiri lah, manja amat (boleh ajaa sih...).
 
 Kalau lu programmer, **Fork repo ini, benerin sendiri, terus Pull Request.** Jangan cuma komplain.
 
 ---
 
 <p align="center">
-Made with 🎤, 🤖, and 0% Brain Power by <b>Proxy</b>.
+Made with 🎤, 🤖, and 0% Brain Power by <b>Me :)</b>.
 </p>
 
