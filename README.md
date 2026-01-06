@@ -25,7 +25,7 @@ The concept is simple:
 
 ### 📥 For Regular Users (Normies)
 Don't touch the code unless you want a headache.
-1.  Go to the **[Releases](https://github.com/stoy109/ytka.git/releases)** page (look at the right sidebar).
+1.  Go to the **[Releases](../../releases)** page (look at the right sidebar).
 2.  Download the `.exe` file (the one that says `Setup`).
 3.  Install it.
 4.  Sing. Try not to break the glass.
@@ -33,9 +33,9 @@ Don't touch the code unless you want a headache.
 ### 💻 For Developers (Masochists)
 Curious about how AI writes spaghetti code? Be my guest.
 
-
+```bash
 # Clone the chaos
-git clone [https://github.com/stoy109/ytka.git](https://github.com/stoy109/ytka.git)
+git clone [https://github.com/username-lu/ytka.git](https://github.com/username-lu/ytka.git)
 cd ytka
 
 # Install dependencies
@@ -46,47 +46,49 @@ npm run electron:dev
 
 # Build executable (May the odds be ever in your favor)
 npm run dist
-🐛 Found a Bug?
-Feel free to report it. However, here is my maintenance policy:
 
-Will I fix it? Maybe. If I'm in a good mood. Or if I'm bored. Probably not.
+```
 
-"Bro, it crashed!" Works on my machine.
+### 🐛 Found a Bug?
 
-"Feature request please!" This is open source. Do it yourself.
+**Feel free to report it.** However, here is my maintenance policy:
 
-If you know how to code, fix it yourself and submit a Pull Request. Don't just whine in the issues tab.
+* **Will I fix it?** Maybe. If I'm in a good mood. Or if I'm bored. Probably not.
+* **"Bro, it crashed!"** Works on my machine.
+* **"Feature request please!"** This is open source. Do it yourself.
 
-🇮🇩 Versi Bahasa Indonesia
-🤷‍♂️ Apaan Tuh?
-YTKA adalah aplikasi karaoke dual-screen yang gw buat karena gw pelit beli software karaoke berbayar dan males sama software gratisan yang ribet.
+If you know how to code, **fix it yourself and submit a Pull Request.** Don't just whine in the issues tab.
+
+---
+
+## 🇮🇩 Versi Bahasa Indonesia
+
+### 🤷‍♂️ Apaan Tuh?
+
+YTKA adalah aplikasi karaoke dual-screen yang gw buat karena gw **pelit** beli software karaoke berbayar dan **males** sama software gratisan yang ribet.
 
 Intinya:
 
-Layar 1 (Laptop): Buat lu ngatur lagu (Controller).
+1. **Layar 1 (Laptop):** Buat lu ngatur lagu (Controller).
+2. **Layar 2 (TV/Proyektor):** Buat nampilin video & lirik biar kayak di Inul Vizta.
+3. **Sumber:** YouTube. Selama ada di YouTube, bisa dinyanyiin.
 
-Layar 2 (TV/Proyektor): Buat nampilin video & lirik biar kayak di Inul Vizta.
+### 📥 Buat User Biasa (Kaum Mendang-Mending)
 
-Sumber: YouTube. Selama ada di YouTube, bisa dinyanyiin.
-
-📥 Buat User Biasa (Kaum Mendang-Mending)
 Gak usah sok ide mau nge-build sendiri kalau gak ngerti koding.
 
-Ke tab [tautan mencurigakan telah dihapus] di menu kanan GitHub.
+1. Ke tab **[tautan mencurigakan telah dihapus]** di menu kanan GitHub.
+2. Download file `.exe` yang ada tulisan `Setup`-nya.
+3. Install.
+4. Nyanyi. Jangan fals.
 
-Download file .exe yang ada tulisan Setup-nya.
+### 💻 Buat Developer (Kaum Kurang Kerjaan)
 
-Install.
-
-Nyanyi. Jangan fals.
-
-💻 Buat Developer (Kaum Kurang Kerjaan)
 Mau liat kodingan spaghetti hasil muntahan AI? Silakan.
 
-Bash
-
+```bash
 # Clone dulu gan
-git clone [https://github.com/stoy109/ytka.git](https://github.com/stoy109/ytka.git)
+git clone [https://github.com/username-lu/ytka.git](https://github.com/username-lu/ytka.git)
 cd ytka
 
 # Install dependencies (Node.js required)
@@ -97,15 +99,25 @@ npm run electron:dev
 
 # Build jadi EXE (Good luck)
 npm run dist
-🐛 Nemuin Bug?
-Lapor aja. Tapi dengerin baik-baik:
 
-Apakah bakal gw benerin? Tergantung mood, cuaca, dan saldo rekening gw.
+```
 
-"Bang, ini error!" Ya maap. Di laptop gw bisa kok.
+### 🐛 Nemuin Bug?
 
-"Bang, tambah fitur dong!" Bikin sendiri lah, manja amat.
+**Lapor aja.** Tapi dengerin baik-baik:
 
-Kalau lu programmer, Fork repo ini, benerin sendiri, terus Pull Request. Jangan cuma komplain.
+* **Apakah bakal gw benerin?** Tergantung *mood*, cuaca, dan saldo rekening gw.
+* **"Bang, ini error!"** Ya maap. Di laptop gw bisa kok.
+* **"Bang, tambah fitur dong!"** Bikin sendiri lah, manja amat.
 
-<p align="center"> Made with 🎤, 🤖, and 0% Brain Power by <b>Proxy</b>. </p>
+Kalau lu programmer, **Fork repo ini, benerin sendiri, terus Pull Request.** Jangan cuma komplain.
+
+---
+
+<p align="center">
+Made with 🎤, 🤖, and 0% Brain Power by <b>Proxy</b>.
+</p>
+
+```
+
+```
