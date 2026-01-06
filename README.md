@@ -35,7 +35,7 @@ Curious about how AI writes spaghetti code? Be my guest.
 
 ```bash
 # Clone the chaos
-git clone [https://github.com/username-lu/ytka.git](https://github.com/username-lu/ytka.git)
+git clone [https://github.com/stoy109/ytka.git](https://github.com/stoy109/ytka.git)
 cd ytka
 
 # Install dependencies
@@ -77,7 +77,7 @@ Intinya:
 
 Gak usah sok ide mau nge-build sendiri kalau gak ngerti koding.
 
-1. Ke tab **[tautan mencurigakan telah dihapus]** di menu kanan GitHub.
+1. Ke tab **[Releases](../../releases)** di menu kanan GitHub.
 2. Download file `.exe` yang ada tulisan `Setup`-nya.
 3. Install.
 4. Nyanyi. Jangan fals.
@@ -88,7 +88,7 @@ Mau liat kodingan spaghetti hasil muntahan AI? Silakan.
 
 ```bash
 # Clone dulu gan
-git clone [https://github.com/username-lu/ytka.git](https://github.com/username-lu/ytka.git)
+git clone [https://github.com/stoy109/ytka.git](https://github.com/stoy109/ytka.git)
 cd ytka
 
 # Install dependencies (Node.js required)
