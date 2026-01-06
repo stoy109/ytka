@@ -11,7 +11,7 @@
   <a href="#-english-version">🇬🇧 English Version</a> | 
   <a href="#-versi-bahasa-indonesia">🇮🇩 Versi Bahasa Indonesia</a>
 </p>
----
+
 
 ## 🇬🇧 English Version
 
@@ -118,6 +118,3 @@ Kalau lu programmer, **Fork repo ini, benerin sendiri, terus Pull Request.** Jan
 Made with 🎤, 🤖, and 0% Brain Power by <b>Proxy</b>.
 </p>
 
-```
-
-```
