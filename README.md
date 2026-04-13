@@ -35,7 +35,7 @@ Curious about how AI writes spaghetti code? Be my guest.
 
 ```bash
 # Clone the chaos
-git clone [https://github.com/stoy109/ytka.git](https://github.com/stoy109/ytka.git)
+git clone https://github.com/stoy109/ytka.git
 cd ytka
 
 # Install dependencies
