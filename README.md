@@ -12,6 +12,7 @@
   <a href="#-versi-bahasa-indonesia">🇮🇩 Versi Bahasa Indonesia</a>
 </p>
 
+---
 
 ## 🇬🇧 English Version
 
@@ -46,7 +47,6 @@ npm run electron:dev
 
 # Build executable (May the odds be ever in your favor)
 npm run dist
-
 ```
 
 ### 🐛 Found a Bug?
@@ -88,7 +88,7 @@ Mau liat kodingan spaghetti hasil muntahan AI? Silakan.
 
 ```bash
 # Clone dulu gan
-git clone [https://github.com/stoy109/ytka.git](https://github.com/stoy109/ytka.git)
+git clone https://github.com/stoy109/ytka.git
 cd ytka
 
 # Install dependencies (Node.js required)
@@ -99,7 +99,6 @@ npm run electron:dev
 
 # Build jadi EXE (Good luck)
 npm run dist
-
 ```
 
 ### 🐛 Nemuin Bug?
@@ -117,4 +116,3 @@ Kalau lu programmer, **Fork repo ini, benerin sendiri, terus Pull Request.** Jan
 <p align="center">
 Made with 🎤, 🤖, and 0% Brain Power by <b>Me :)</b>.
 </p>
-
