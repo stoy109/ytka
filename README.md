@@ -26,9 +26,11 @@ The concept is simple:
 
 ### 📥 For Regular Users (Normies)
 Don't touch the code unless you want a headache.
-1.  Go to the **[Releases](../../releases)** page (look at the right sidebar).
-2.  Download the `.exe` file (the one that says `Setup`).
-3.  Install it.
+1.  Go to the **[Releases](../../releases)** page.
+2.  **Download:**
+    *   **2.1 Windows:** Download the `.exe` file (the one that says `Setup`).
+    *   **2.2 Linux:** Download the `.AppImage` file. Right-click the file -> Properties -> Permissions -> **Allow executing file as program**. Or run `chmod +x ytka.AppImage && ./ytka.AppImage`.
+3.  **Run:** Double-click the file to install or run.
 4.  Sing. Try not to break the glass.
 
 ### 💻 For Developers (Masochists)
@@ -78,8 +80,10 @@ Intinya:
 Gak usah sok ide mau nge-build sendiri kalau gak ngerti koding.
 
 1. Ke tab **[Releases](../../releases)** di menu kanan GitHub.
-2. Download file `.exe` yang ada tulisan `Setup`-nya.
-3. Install.
+2. **Download:**
+   * **2.1 Windows:** Download file `.exe` yang ada tulisan `Setup`-nya.
+   * **2.2 Linux:** Download file `.AppImage`. Klik kanan -> Properties -> Permissions -> Pilih **Allow executing file as program**. Atau lewat terminal: `chmod +x file.AppImage && ./file.AppImage`.
+3. **Run:** Double-klik file buat install atau jalanin.
 4. Nyanyi. Jangan fals.
 
 ### 💻 Buat Developer (Kaum Kurang Kerjaan)
