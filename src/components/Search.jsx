@@ -82,7 +82,7 @@ const Search = ({ className, isGrid = false }) => {
                             return
                         }
                     }
-                } catch (e) { }
+                } catch { }
             }
         }
 
@@ -225,10 +225,11 @@ const Search = ({ className, isGrid = false }) => {
                     // Start of handling empty pages (filter bubbles)
                     // If no items but token exists, just update token so next click tries next page
                     setNextPageToken(data.nextpage)
-                    // If we want to be fancy, we could recurse here, but let's let user click again for now (UI will be active)
+                    // If we want to be fancy, we could recurse here, but let's let user click again for now
+                    break
                 }
-            } catch (e) {
-                console.warn("Failed to fetch next page", e)
+            } catch {
+                console.warn("Failed to fetch next page")
             }
         }
         setIsFetchingMore(false)
@@ -265,24 +266,6 @@ const Search = ({ className, isGrid = false }) => {
             }
             addToQueue(video)
             setQuery('')
-        }
-    }
-
-    // Helper to parse Piped items
-    const parsePipedItem = (item, reason = null) => {
-        let videoId = ''
-        if (item.url) {
-            const match = item.url.match(/\/watch\?v=([^&]+)/)
-            if (match) videoId = match[1]
-        }
-        if (!videoId) return null
-        return {
-            url: `https://www.youtube.com/watch?v=${videoId}`,
-            title: item.title,
-            thumbnail: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
-            duration: item.duration ? formatDuration(item.duration) : '00:00',
-            channel: item.uploaderName,
-            reason: reason
         }
     }
 

@@ -23,9 +23,9 @@
     },
     "files": [
       "dist/**/*",
-      "electron/**/*",
+      "electron/main.cjs",
       "package.json",
-      "build/icon.ico"
+      "build/icon.png"
     ],
     "win": {
       "target": "nsis",
@@ -34,6 +34,12 @@
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
+    },
+    "linux": {
+      "target": "AppImage",
+      "executableName": "ytka",
+      "category": "AudioVideo",
+      "icon": "build/icon.png"
     }
   },
   "dependencies": {
@@ -45,7 +51,7 @@
     "react-dom": "^19.2.0",
     "react-player": "^3.4.0",
     "tailwind-merge": "^3.4.0",
-    "tailwind-scrollbar": "^4.0.2",
+    "tailwind-scrollbar": "^3.1.0",
     "zustand": "^5.0.9"
   },
   "devDependencies": {

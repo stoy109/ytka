@@ -97,7 +97,7 @@ export const getRecommendations = async (playedHistory, affinityMap, existingIds
                     ...item,
                     sourceValues: qObj
                 }))
-            } catch (e) { return [] }
+            } catch { return [] }
         }
         return []
     })

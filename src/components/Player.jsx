@@ -15,7 +15,6 @@ const Player = ({ className, isProjectorMode = false }) => {
     const webviewRef = useRef(null)
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
-    const [isSeeking, setIsSeeking] = useState(false)
     const [isAd, setIsAd] = useState(false)
     const [showSkipButton, setShowSkipButton] = useState(false)
     const [isWebviewReady, setIsWebviewReady] = useState(false)
@@ -253,7 +252,7 @@ const Player = ({ className, isProjectorMode = false }) => {
                         playNext()
                     }
                 }
-            } catch (e) { }
+            } catch { }
         }, 500)
 
         return () => clearInterval(interval)
@@ -282,7 +281,7 @@ const Player = ({ className, isProjectorMode = false }) => {
         }
 
         fetchRecommendations()
-    }, [currentVideo, playedHistory, affinityMap, setRelatedVideos])
+    }, [currentVideo, playedHistory, affinityMap, setRelatedVideos, videoId])
 
 
     // Volume control
@@ -333,7 +332,6 @@ const Player = ({ className, isProjectorMode = false }) => {
             })()
         `).catch(() => { })
         setCurrentTime(time)
-        setIsSeeking(false)
     }
 
     const skipAd = () => {
@@ -397,7 +395,7 @@ const Player = ({ className, isProjectorMode = false }) => {
                             min={0}
                             max={duration || 100}
                             value={currentTime}
-                            onChange={(e) => { setIsSeeking(true); setCurrentTime(parseFloat(e.target.value)); }}
+                            onChange={(e) => { setCurrentTime(parseFloat(e.target.value)); }}
                             onMouseUp={() => handleSeek(currentTime)}
                             onTouchEnd={() => handleSeek(currentTime)}
                             className="flex-1 h-1 bg-white/20 rounded-lg appearance-none cursor-pointer"

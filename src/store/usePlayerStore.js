@@ -17,9 +17,6 @@ const usePlayerStore = create(
             // Load more state
             isLoadingMore: false,
             canLoadMore: true,
-            // Load more state
-            isLoadingMore: false,
-            canLoadMore: true,
             loadMoreCallback: null, // Function to call from Player component
 
             // Advanced Controls State

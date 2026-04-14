@@ -8,8 +8,6 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 1280,
         height: 800,
-        width: 1280,
-        height: 800,
         title: 'ytka',
         backgroundColor: '#000000', // Cyberpunk black
         titleBarStyle: 'hidden', // Custom frame if we want
@@ -62,7 +60,6 @@ ipcMain.on('toggle-projector', (event, arg) => {
         y: displayToUse.bounds.y + 50,
         width: 1000,
         height: 600,
-        fullscreen: !!externalDisplay, // Fullscreen ONLY if external
         fullscreen: !!externalDisplay, // Fullscreen ONLY if external
         title: 'ytka - Projector',
         backgroundColor: '#000000',

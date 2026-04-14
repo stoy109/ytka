@@ -72,7 +72,7 @@ function App() {
         return () => ipcRenderer.removeListener('sync-time', handleSyncTime)
       }
     }
-  }, [isProjector, isProjectorWindow, currentVideo, isPlaying, queue, playbackSpeed, repeatMode, isShuffled, resolution, replayTrigger])
+  }, [isProjector, isProjectorWindow, currentVideo, isPlaying, queue, playbackSpeed, repeatMode, isShuffled, resolution, replayTrigger, setStoreState, volume])
 
   const toggleProjector = () => {
     if (ipcRenderer) {

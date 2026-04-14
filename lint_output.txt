@@ -1,0 +1,100 @@
+
+> ytka@0.0.0 lint
+> eslint .
+
+
+/home/stoy/Documents/ytka/src/App.jsx
+  31:5  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  29 |   // SYNC LOGIC
+  30 |   useEffect(() => {
+> 31 |     setMounted(true)
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  32 |
+  33 |     if (ipcRenderer) {
+  34 |       // Listen for status updates  react-hooks/set-state-in-effect
+  75:6  warning  React Hook useEffect has missing dependencies: 'setStoreState' and 'volume'. Either include them or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/exhaustive-deps
+
+/home/stoy/Documents/ytka/src/components/Player.jsx
+   18:12  error    'isSeeking' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                no-unused-vars
+  136:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  134 |         if (!webview || !videoUrl) return
+  135 |
+> 136 |         setIsWebviewReady(false) // Reset on new video
+      |         ^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  137 |
+  138 |         const onDomReady = () => {
+  139 |             webview.insertCSS(cssInjection)  react-hooks/set-state-in-effect
+  161:8   warning  React Hook useEffect has a missing dependency: 'cssInjection'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/exhaustive-deps
+  256:22  error    'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            no-unused-vars
+  256:25  error    Empty block statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    no-empty
+  285:8   warning  React Hook useEffect has a missing dependency: 'videoId'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/exhaustive-deps
+
+/home/stoy/Documents/ytka/src/components/Search.jsx
+   47:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  45 |     // Reset pagination on new query, show loading IMMEDIATELY
+  46 |     useEffect(() => {
+> 47 |         setVisibleCount(20)
+     |         ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  48 |         setNextPageToken(null)
+  49 |         setResults([])
+  50 |         if (query.trim()) {  react-hooks/set-state-in-effect
+   69:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  67 |     useEffect(() => {
+  68 |         if (!query.trim()) {
+> 69 |             setSuggestions([])
+     |             ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  70 |             return
+  71 |         }
+  72 |                                                                                   react-hooks/set-state-in-effect
+   85:26  error    'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      no-unused-vars
+   85:29  error    Empty block statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              no-empty
+  138:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  136 |     useEffect(() => {
+  137 |         if (!query && playedHistory.length > 0 && historyRecs.length === 0) {
+> 138 |             fetchAdvancedRecs(false)
+      |             ^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  139 |         }
+  140 |     }, [playedHistory, query])
+  141 |      react-hooks/set-state-in-effect
+  140:8   warning  React Hook useEffect has missing dependencies: 'fetchAdvancedRecs' and 'historyRecs.length'. Either include them or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    react-hooks/exhaustive-deps
+  222:21  error    'success' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            no-unused-vars
+  272:11  error    'parsePipedItem' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     no-unused-vars
+  304:8   warning  React Hook useEffect has missing dependencies: 'fetchAdvancedRecs' and 'fetchMoreSearchResults'. Either include them or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/exhaustive-deps
+
+✖ 17 problems (12 errors, 5 warnings)
+
