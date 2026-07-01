@@ -1,7 +1,5 @@
 # 🎤 YTKA (YouTube Karaoke App)
 
-> *"100% AI Generated Code. 0% Brain Power. 100% Karaoke Vibes."*
-
 ![Electron](https://img.shields.io/badge/Electron-Based-blue?style=for-the-badge&logo=electron)
 ![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)
 ![Maintenance](https://img.shields.io/badge/Maintenance-Mood--Based-red?style=for-the-badge)
@@ -118,5 +116,5 @@ Kalau lu programmer, **Fork repo ini, benerin sendiri, terus Pull Request.** Jan
 ---
 
 <p align="center">
-Made with 🎤, 🤖, and 0% Brain Power by <b>Me :)</b>.
+Made with 🎤, 🤖, by <b>Me :)</b>.
 </p>
